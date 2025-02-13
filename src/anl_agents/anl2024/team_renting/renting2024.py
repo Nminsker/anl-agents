@@ -15,11 +15,11 @@ import warnings
 from collections import deque
 from itertools import chain, zip_longest
 
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 import numpy as np
 from negmas.outcomes import Outcome
 from negmas.preferences import nash_points, pareto_frontier
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 from scipy.optimize import curve_fit
 
 from .ReservationValuePredictor import ReservationValuePredictor
@@ -29,7 +29,7 @@ warnings.filterwarnings("ignore")
 __all__ = ["AgentRenting2024"]
 
 
-class AgentRenting2024(ANLNegotiator):
+class AgentRenting2024(SAOPRNegotiator):
     def __init__(self, **kwargs):
         """
         Initializes variables/lists.

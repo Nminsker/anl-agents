@@ -2,7 +2,7 @@ from scipy.optimize import curve_fit
 from negmas.sao import SAOResponse
 from negmas import ResponseType
 from copy import deepcopy
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 from negmas import Outcome
 import numpy as np
 
@@ -14,7 +14,7 @@ def aspiration_function(t, mx, rv, e):
     return (mx - rv) * (1.0 - np.power(t, e)) + rv
 
 
-class HardChaosNegotiator(ANLNegotiator):
+class HardChaosNegotiator(SAOPRNegotiator):
     def __init__(
         self, *args, e=8.0, **kwargs
     ):  # Increase the exponent to make the negotiation tougher

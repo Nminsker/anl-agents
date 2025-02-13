@@ -12,16 +12,16 @@ from copy import deepcopy
 import random
 
 import numpy as np
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 
 
 __all__ = ["TAKAgent"]
 
 
-class TAKAgent(ANLNegotiator):
+class TAKAgent(SAOPRNegotiator):
     rational_outcomes = tuple()
     negotiation_round: int = 0
     negotiation_duration: int = 0

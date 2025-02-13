@@ -9,14 +9,14 @@ the authors and the ANAC 2024 ANL competition.
 
 import math
 
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 
 __all__ = ["BidBot"]
 
 
-class BidBot(ANLNegotiator):
+class BidBot(SAOPRNegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

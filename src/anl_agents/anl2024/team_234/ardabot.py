@@ -9,15 +9,15 @@ the authors and the ANAC 2024 ANL competition.
 
 import random
 
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 
 __all__ = ["Ardabot"]
 
 
-class Ardabot(ANLNegotiator):
+class Ardabot(SAOPRNegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

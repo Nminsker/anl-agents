@@ -16,11 +16,11 @@ import math
 import random
 from operator import itemgetter
 
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 import numpy as np
 from matplotlib import pyplot as plt
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 
 __all__ = ["Group5"]
 
@@ -31,7 +31,7 @@ def safelog(x, *args, **kwargs):
     return math.log(x, *args, **kwargs)
 
 
-class Group5(ANLNegotiator):
+class Group5(SAOPRNegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

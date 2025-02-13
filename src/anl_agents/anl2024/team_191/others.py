@@ -9,17 +9,17 @@ the authors and the ANAC 2024 ANL competition.
 
 import random
 import numpy as np
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 import math
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 from negmas.preferences import pareto_frontier
 
 __all__ = ["AwesomeNegotiator", "IngoNegotiator"]
 
 
-class AwesomeNegotiator(ANLNegotiator):
+class AwesomeNegotiator(SAOPRNegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """
@@ -167,7 +167,7 @@ class AwesomeNegotiator(ANLNegotiator):
         ]
 
 
-class IngoNegotiator(ANLNegotiator):
+class IngoNegotiator(SAOPRNegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

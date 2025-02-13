@@ -13,9 +13,9 @@ Team Members:
     5. Collin de Wit <c.r.dewit@students.uu.nl>
 """
 
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 from negmas.preferences import pareto_frontier
 from scipy.optimize import curve_fit
 from scipy.special import erf
@@ -23,7 +23,7 @@ from scipy.special import erf
 __all__ = ["AntiAgent"]
 
 
-class AntiAgent(ANLNegotiator):
+class AntiAgent(SAOPRNegotiator):
     """
     Class to instantiate the implemented negotiating agent.
     """

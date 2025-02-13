@@ -1,7 +1,7 @@
 import numpy as np
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 
 
 # from sklearn.gaussian_process import GaussianProcessRegressor
@@ -14,7 +14,7 @@ from negmas.sao import ResponseType, SAOResponse, SAOState
 __all__ = ["Nayesian2"]
 
 
-class Nayesian2(ANLNegotiator):
+class Nayesian2(SAOPRNegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

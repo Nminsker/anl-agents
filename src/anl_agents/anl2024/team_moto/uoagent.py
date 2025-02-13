@@ -11,15 +11,15 @@ ver 1.1.1
 GRAND_FINAL
 """
 
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 import numpy as np
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 
 __all__ = ["UOAgent"]
 
 
-class UOAgent(ANLNegotiator):
+class UOAgent(SAOPRNegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

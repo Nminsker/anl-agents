@@ -11,11 +11,11 @@ from copy import deepcopy
 import random
 
 import numpy as np
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 
 from negmas.outcomes import Outcome
 from negmas.preferences import PresortingInverseUtilityFunction
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 from scipy.optimize import curve_fit
 
 __all__ = ["Goldie"]
@@ -26,7 +26,7 @@ def aspiration_function(t, mx, rv, e):
     return (mx - rv) * (1.0 - np.power(t, e)) + rv
 
 
-class Goldie(ANLNegotiator):
+class Goldie(SAOPRNegotiator):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 

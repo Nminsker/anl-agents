@@ -12,13 +12,13 @@ import warnings
 
 import matplotlib.pyplot as plt
 import numpy as np
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 
 from negmas.common import MechanismState
 
 # from helpers.runner import run_a_tournament
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 
 
 from scipy.stats import norm
@@ -26,7 +26,7 @@ from scipy.stats import norm
 __all__ = ["MissG"]
 
 
-class MissG(ANLNegotiator):
+class MissG(SAOPRNegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

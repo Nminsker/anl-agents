@@ -1,4 +1,4 @@
-from anl.anl2024.negotiators.base import ANLNegotiator
+
 import numpy as np
 from negmas import (
     Outcome,
@@ -19,7 +19,7 @@ def aspiration_function(t, mx, rv, e):
     return (mx - rv) * (1.0 - np.power(t, e)) + rv
 
 
-class Shochan(ANLNegotiator):
+class Shochan(SAOPRNegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -471,7 +471,7 @@ class Shochan(ANLNegotiator):
         return float(self.ufun(offer)) >= myasp
 
 
-class Shochan_base75(ANLNegotiator):
+class Shochan_base75(SAOPRNegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -811,7 +811,7 @@ class Shochan_base75(ANLNegotiator):
             )
 
 
-class Shochan_base50(ANLNegotiator):
+class Shochan_base50(SAOPRNegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -1155,7 +1155,7 @@ class Shochan_base50(ANLNegotiator):
             )
 
 
-class Shochan_base100(ANLNegotiator):
+class Shochan_base100(SAOPRNegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -1499,7 +1499,7 @@ class Shochan_base100(ANLNegotiator):
             )
 
 
-class Shochan_base125(ANLNegotiator):
+class Shochan_base125(SAOPRNegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -1843,7 +1843,7 @@ class Shochan_base125(ANLNegotiator):
             )
 
 
-class Shochan_base150(ANLNegotiator):
+class Shochan_base150(SAOPRNegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -2187,7 +2187,7 @@ class Shochan_base150(ANLNegotiator):
             )
 
 
-class Shochan_base175(ANLNegotiator):
+class Shochan_base175(SAOPRNegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -2531,7 +2531,7 @@ class Shochan_base175(ANLNegotiator):
             )
 
 
-class Shochan_base200(ANLNegotiator):
+class Shochan_base200(SAOPRNegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
