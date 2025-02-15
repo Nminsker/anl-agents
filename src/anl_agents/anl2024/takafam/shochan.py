@@ -4,6 +4,7 @@ from negmas import (
     Outcome,
     ResponseType,
     SAOResponse,
+    SAONegotiator,
     SAOState,
     nash_points,
     pareto_frontier,
