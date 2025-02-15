@@ -1,5 +1,5 @@
 from scipy.optimize import curve_fit
-from negmas.sao import SAOResponse
+from negmas.sao import SAOResponse, SAONegotiator
 from negmas import ResponseType
 from copy import deepcopy
 
