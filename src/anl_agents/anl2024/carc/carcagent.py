@@ -3,7 +3,7 @@ from copy import deepcopy
 
 
 import numpy as np
-from negmas.sao import SAOResponse
+from negmas.sao import SAOResponse, SAONegotiator
 from negmas import Outcome, ResponseType
 from negmas.preferences import nash_points, pareto_frontier
 from scipy.optimize import curve_fit
