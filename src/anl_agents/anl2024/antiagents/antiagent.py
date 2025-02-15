@@ -15,7 +15,7 @@ Team Members:
 
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 from negmas.preferences import pareto_frontier
 from scipy.optimize import curve_fit
 from scipy.special import erf
@@ -23,7 +23,7 @@ from scipy.special import erf
 __all__ = ["AntiAgent"]
 
 
-class AntiAgent(SAOPRNegotiator):
+class AntiAgent(SAONegotiator):
     """
     Class to instantiate the implemented negotiating agent.
     """

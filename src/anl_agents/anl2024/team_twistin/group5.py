@@ -20,7 +20,7 @@ from operator import itemgetter
 import numpy as np
 from matplotlib import pyplot as plt
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 __all__ = ["Group5"]
 
@@ -31,7 +31,7 @@ def safelog(x, *args, **kwargs):
     return math.log(x, *args, **kwargs)
 
 
-class Group5(SAOPRNegotiator):
+class Group5(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

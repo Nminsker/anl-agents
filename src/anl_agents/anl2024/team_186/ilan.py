@@ -10,7 +10,7 @@ from typing import List
 __all__ = ["Ilan"]
 
 
-class Ilan(SAOPRNegotiator):
+class Ilan(SAONegotiator):
     def __init__(
         self, *args, e: float = 5.0, aggressiveness: float = 0.8, **kwargs
     ) -> None:

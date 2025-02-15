@@ -15,13 +15,13 @@ import numpy as np
 
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 
 __all__ = ["TAKAgent"]
 
 
-class TAKAgent(SAOPRNegotiator):
+class TAKAgent(SAONegotiator):
     rational_outcomes = tuple()
     negotiation_round: int = 0
     negotiation_duration: int = 0

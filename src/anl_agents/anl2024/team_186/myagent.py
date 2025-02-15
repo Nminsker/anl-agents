@@ -11,12 +11,12 @@ import random
 
 
 
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 __all__ = ["MyNegotiator"]
 
 
-class MyNegotiator(SAOPRNegotiator):
+class MyNegotiator(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

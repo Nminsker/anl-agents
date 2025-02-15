@@ -13,13 +13,13 @@ import numpy as np
 import math
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 from negmas.preferences import pareto_frontier
 
 __all__ = ["AwesomeNegotiator", "IngoNegotiator"]
 
 
-class AwesomeNegotiator(SAOPRNegotiator):
+class AwesomeNegotiator(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """
@@ -167,7 +167,7 @@ class AwesomeNegotiator(SAOPRNegotiator):
         ]
 
 
-class IngoNegotiator(SAOPRNegotiator):
+class IngoNegotiator(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

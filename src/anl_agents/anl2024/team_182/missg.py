@@ -18,7 +18,7 @@ from negmas.common import MechanismState
 
 # from helpers.runner import run_a_tournament
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 
 from scipy.stats import norm
@@ -26,7 +26,7 @@ from scipy.stats import norm
 __all__ = ["MissG"]
 
 
-class MissG(SAOPRNegotiator):
+class MissG(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

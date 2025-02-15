@@ -11,12 +11,12 @@ import random
 
 
 import numpy as np
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 __all__ = ["KosAgent"]
 
 
-class KosAgent(SAOPRNegotiator):
+class KosAgent(SAONegotiator):
     # 変数の初期設定
     step = 0
     current_time = 0

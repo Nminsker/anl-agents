@@ -10,11 +10,11 @@ the authors and the ANAC 2024 ANL competition.
 import random
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 
 
-class AwesomeNegotiator(SAOPRNegotiator):
+class AwesomeNegotiator(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

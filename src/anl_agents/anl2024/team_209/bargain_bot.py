@@ -10,7 +10,7 @@ the authors and the ANAC 2024 ANL competition.
 
 from negmas.outcomes import Outcome
 from negmas.preferences import nash_points, pareto_frontier
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 from .acceptance_logic import should_accept_offer
 from .bidding_strategy import BiddingStrategy
@@ -19,7 +19,7 @@ from .opponent_model import update_reserved_value
 __all__ = ["BargainBot"]
 
 
-class BargainBot(SAOPRNegotiator):
+class BargainBot(SAONegotiator):
     def on_preferences_changed(self, changes):
         """
         Called when preferences change. In ANL 2024, this is equivalent with initializing the agent.

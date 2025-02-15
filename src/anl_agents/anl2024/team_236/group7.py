@@ -9,14 +9,14 @@ the authors and the ANAC 2024 ANL competition.
 
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 __all__ = ["Group7"]
 
 # burada rakibin yaptığı tekliflerde yine rakibin utility'si saklanacak
 
 
-class Group7(SAOPRNegotiator):
+class Group7(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

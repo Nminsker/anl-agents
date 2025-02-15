@@ -14,12 +14,12 @@ GRAND_FINAL
 
 import numpy as np
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 __all__ = ["UOAgent"]
 
 
-class UOAgent(SAOPRNegotiator):
+class UOAgent(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

@@ -19,7 +19,7 @@ def aspiration_function(t, mx, rv, e):
     return (mx - rv) * (1.0 - np.power(t, e)) + rv
 
 
-class Shochan(SAOPRNegotiator):
+class Shochan(SAONegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -471,7 +471,7 @@ class Shochan(SAOPRNegotiator):
         return float(self.ufun(offer)) >= myasp
 
 
-class Shochan_base75(SAOPRNegotiator):
+class Shochan_base75(SAONegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -811,7 +811,7 @@ class Shochan_base75(SAOPRNegotiator):
             )
 
 
-class Shochan_base50(SAOPRNegotiator):
+class Shochan_base50(SAONegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -1155,7 +1155,7 @@ class Shochan_base50(SAOPRNegotiator):
             )
 
 
-class Shochan_base100(SAOPRNegotiator):
+class Shochan_base100(SAONegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -1499,7 +1499,7 @@ class Shochan_base100(SAOPRNegotiator):
             )
 
 
-class Shochan_base125(SAOPRNegotiator):
+class Shochan_base125(SAONegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -1843,7 +1843,7 @@ class Shochan_base125(SAOPRNegotiator):
             )
 
 
-class Shochan_base150(SAOPRNegotiator):
+class Shochan_base150(SAONegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -2187,7 +2187,7 @@ class Shochan_base150(SAOPRNegotiator):
             )
 
 
-class Shochan_base175(SAOPRNegotiator):
+class Shochan_base175(SAONegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:
@@ -2531,7 +2531,7 @@ class Shochan_base175(SAOPRNegotiator):
             )
 
 
-class Shochan_base200(SAOPRNegotiator):
+class Shochan_base200(SAONegotiator):
     """A simple negotiator that uses curve fitting to learn the reserved value.
 
     Args:

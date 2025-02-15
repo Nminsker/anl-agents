@@ -1,7 +1,7 @@
 import numpy as np
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 
 # from sklearn.gaussian_process import GaussianProcessRegressor
@@ -14,7 +14,7 @@ from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
 __all__ = ["Nayesian2"]
 
 
-class Nayesian2(SAOPRNegotiator):
+class Nayesian2(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

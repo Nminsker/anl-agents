@@ -1,7 +1,7 @@
 import random
 
 import numpy as np
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 
 from scipy.optimize import curve_fit
@@ -9,7 +9,7 @@ from scipy.optimize import curve_fit
 __all__ = ["Group6"]
 
 
-class Group6(SAOPRNegotiator):
+class Group6(SAONegotiator):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.offer_history = []

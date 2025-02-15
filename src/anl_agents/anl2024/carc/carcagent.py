@@ -15,7 +15,7 @@ def aspiration_function(t, mx, rv, e, c):
     return (mx - rv) * (1.0 - c * np.power(t, e)) + rv
 
 
-class CARCAgent(SAOPRNegotiator):
+class CARCAgent(SAONegotiator):
     def __init__(
         self,
         *args,

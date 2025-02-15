@@ -14,7 +14,7 @@ def aspiration_function(t, mx, rv, e):
     return (mx - rv) * (1.0 - np.power(t, e)) + rv
 
 
-class HardChaosNegotiator(SAOPRNegotiator):
+class HardChaosNegotiator(SAONegotiator):
     def __init__(
         self, *args, e=8.0, **kwargs
     ):  # Increase the exponent to make the negotiation tougher

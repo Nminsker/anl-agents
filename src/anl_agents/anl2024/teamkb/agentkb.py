@@ -13,12 +13,12 @@ import numpy as np
 
 from negmas import pareto_frontier
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 __all__ = ["AgentKB"]
 
 
-class AgentKB(SAOPRNegotiator):
+class AgentKB(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

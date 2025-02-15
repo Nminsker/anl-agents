@@ -36,7 +36,7 @@ def initialize_DetReg(
     return (time_low, time_high, initial_value, reserved_value)
 
 
-class GeneralNegotiationModel(SAOPRNegotiator):
+class GeneralNegotiationModel(SAONegotiator):
     def __init__(self, *args, **kwargs) -> None:
         """
         Initializes the general negotiation model.

@@ -19,7 +19,7 @@ from itertools import chain, zip_longest
 import numpy as np
 from negmas.outcomes import Outcome
 from negmas.preferences import nash_points, pareto_frontier
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 from scipy.optimize import curve_fit
 
 from .ReservationValuePredictor import ReservationValuePredictor
@@ -29,7 +29,7 @@ warnings.filterwarnings("ignore")
 __all__ = ["AgentRenting2024"]
 
 
-class AgentRenting2024(SAOPRNegotiator):
+class AgentRenting2024(SAONegotiator):
     def __init__(self, **kwargs):
         """
         Initializes variables/lists.

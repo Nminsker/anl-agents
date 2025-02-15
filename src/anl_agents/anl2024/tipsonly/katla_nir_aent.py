@@ -5,7 +5,7 @@ import numpy as np
 
 from negmas.gb.common import GBState
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 __all__ = ["KatlaNirAgent"]
 
@@ -199,7 +199,7 @@ class DetectingRegion:
         return best_point
 
 
-class KatlaNirAgent(SAOPRNegotiator):
+class KatlaNirAgent(SAONegotiator):
     IP = 0  # Initial price will be set during negotiation start
     RP = 0  # Reserve price
     T = 0  # Deadline

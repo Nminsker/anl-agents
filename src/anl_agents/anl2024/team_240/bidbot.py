@@ -11,12 +11,12 @@ import math
 
 
 from negmas.outcomes import Outcome
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 
 __all__ = ["BidBot"]
 
 
-class BidBot(SAOPRNegotiator):
+class BidBot(SAONegotiator):
     """
     Your agent code. This is the ONLY class you need to implement
     """

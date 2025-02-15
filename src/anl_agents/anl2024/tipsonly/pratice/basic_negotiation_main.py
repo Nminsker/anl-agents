@@ -10,7 +10,7 @@ def aspiration_function(t, mx, rv, e):
     return (mx - rv) * (1.0 - np.power(t, e)) + rv
 
 
-class MyNegotiator(SAOPRNegotiator):
+class MyNegotiator(SAONegotiator):
     def __init__(self, *args, e: float = 5.0, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         self.e = e

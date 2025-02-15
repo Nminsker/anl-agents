@@ -15,7 +15,7 @@ import numpy as np
 
 from negmas.outcomes import Outcome
 from negmas.preferences import PresortingInverseUtilityFunction
-from negmas.sao import ResponseType, SAOResponse, SAOState, SAOPRNegotiator
+from negmas.sao import ResponseType, SAOResponse, SAOState, SAONegotiator
 from scipy.optimize import curve_fit
 
 __all__ = ["Goldie"]
@@ -26,7 +26,7 @@ def aspiration_function(t, mx, rv, e):
     return (mx - rv) * (1.0 - np.power(t, e)) + rv
 
 
-class Goldie(SAOPRNegotiator):
+class Goldie(SAONegotiator):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
