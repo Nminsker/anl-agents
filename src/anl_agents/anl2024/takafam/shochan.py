@@ -106,7 +106,7 @@ class Shochan(SAONegotiator):
         self.opponent_ufun.reserved_value = 0.0
         return super().on_preferences_changed(changes)
 
-    def __call__(self, state: SAOState) -> SAOResponse:
+    def __call__(self, state: SAOState, dest: str | None = None) -> SAOResponse:
         assert self.ufun and self.opponent_ufun
         # update the opponent reserved value in self.opponent_ufun
         # self.update_reserved_value(state)
@@ -541,7 +541,7 @@ class Shochan_base75(SAONegotiator):
         self.best_offer__ = None
         # self.most
 
-    def __call__(self, state: SAOState) -> SAOResponse:
+    def __call__(self, state: SAOState, dest: str | None = None) -> SAOResponse:
         assert self.ufun and self.opponent_ufun
         # update the opponent reserved value in self.opponent_ufun
         # self.update_reserved_value(state)
@@ -885,7 +885,7 @@ class Shochan_base50(SAONegotiator):
         self.best_offer__ = self.ufun.best()
         return super().on_preferences_changed(changes)
 
-    def __call__(self, state: SAOState) -> SAOResponse:
+    def __call__(self, state: SAOState, dest: str | None = None) -> SAOResponse:
         assert self.ufun and self.opponent_ufun
         # update the opponent reserved value in self.opponent_ufun
         # self.update_reserved_value(state)
@@ -1229,7 +1229,7 @@ class Shochan_base100(SAONegotiator):
         self.best_offer__ = self.ufun.best()
         return super().on_preferences_changed(changes)
 
-    def __call__(self, state: SAOState) -> SAOResponse:
+    def __call__(self, state: SAOState, dest: str | None = None) -> SAOResponse:
         assert self.ufun and self.opponent_ufun
         # update the opponent reserved value in self.opponent_ufun
         # self.update_reserved_value(state)
@@ -1573,7 +1573,7 @@ class Shochan_base125(SAONegotiator):
         self.best_offer__ = self.ufun.best()
         return super().on_preferences_changed(changes)
 
-    def __call__(self, state: SAOState) -> SAOResponse:
+    def __call__(self, state: SAOState, dest: str | None = None) -> SAOResponse:
         assert self.ufun and self.opponent_ufun
         # update the opponent reserved value in self.opponent_ufun
         # self.update_reserved_value(state)
@@ -1917,7 +1917,7 @@ class Shochan_base150(SAONegotiator):
         self.best_offer__ = self.ufun.best()
         return super().on_preferences_changed(changes)
 
-    def __call__(self, state: SAOState) -> SAOResponse:
+    def __call__(self, state: SAOState, dest: str | None = None) -> SAOResponse:
         assert self.ufun and self.opponent_ufun
         # update the opponent reserved value in self.opponent_ufun
         # self.update_reserved_value(state)
@@ -2261,7 +2261,7 @@ class Shochan_base175(SAONegotiator):
         self.best_offer__ = self.ufun.best()
         return super().on_preferences_changed(changes)
 
-    def __call__(self, state: SAOState) -> SAOResponse:
+    def __call__(self, state: SAOState, dest: str | None = None) -> SAOResponse:
         assert self.ufun and self.opponent_ufun
         # update the opponent reserved value in self.opponent_ufun
         # self.update_reserved_value(state)
@@ -2605,7 +2605,7 @@ class Shochan_base200(SAONegotiator):
         self.best_offer__ = self.ufun.best()
         return super().on_preferences_changed(changes)
 
-    def __call__(self, state: SAOState) -> SAOResponse:
+    def __call__(self, state: SAOState, dest: str | None = None) -> SAOResponse:
         assert self.ufun and self.opponent_ufun
         # update the opponent reserved value in self.opponent_ufun
         # self.update_reserved_value(state)
